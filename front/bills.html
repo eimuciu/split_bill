@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Bill</title>
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/commonFooter.css" />
+    <link rel="stylesheet" href="./style/bills.css" />
+    <script type="module" src="./script/bills.js" defer></script>
+  </head>
+  <body>
+    <a href="groups.html"><button class="backBtn">Back</button></a>
+    <header>
+      <img class="logo" src="./static/logo.jpg" alt="logo" />
+      <h2>Split Bill</h2>
+    </header>
+    <main>
+      <h2 class="red-title"></h2>
+      <h3>Group's bills:</h3>
+      <section class="data-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Description</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <section class="form-container">
+        <h2>Add bill</h2>
+        <form id="dataform">
+          <label for="amount">Amount:</label>
+          <span class="error"></span>
+          <input id="amount" type="number" />
+          <label for="description">Description:</label>
+          <span class="error"></span>
+          <input id="description" type="text" />
+        </form>
+        <button type="submit" form="dataform">Add</button>
+      </section>
+    </footer>
+    <script>
+      document.body.style.display = 'none';
+    </script>
+  </body>
+</html>

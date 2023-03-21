@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Bill</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/commonFooter.css" />
+    <link rel="stylesheet" href="./style/groups.css" />
+    <script type="module" src="./script/groups.js" defer></script>
+  </head>
+  <body>
+    <button class="logoutBtn">Log Out</button>
+    <header>
+      <img class="logo" src="./static/logo.jpg" alt="logo" />
+      <h2>Split Bill</h2>
+    </header>
+    <main>
+      <div class="main-first-container">
+        <h3>Select Your Group</h3>
+        <div>
+          <i onClick="showDropDown(this)" class="fa fa-arrow-down"></i>
+          <div class="drop-down">
+            <a href="newgroupform.html">Create new group</a>
+          </div>
+        </div>
+      </div>
+      <section class="data-container"></section>
+    </main>
+    <footer>
+      <section class="form-container">
+        <h2>Add group</h2>
+        <form id="dataform">
+          <label for="groupfield">Group ID:</label>
+          <span class="error"></span>
+          <select id="groupfield"></select>
+        </form>
+        <button type="submit" form="dataform">Add</button>
+      </section>
+    </footer>
+    <script>
+      document.body.style.display = 'none';
+
+      function showDropDown(el) {
+        el.nextElementSibling.style.display = 'block';
+      }
+
+      document.body.addEventListener('click', (e) => {
+        const dropel = document.querySelector('.fa-arrow-down');
+        if (!e.target.contains(dropel)) {
+          dropel.nextElementSibling.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>

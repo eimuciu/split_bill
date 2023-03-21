@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Bill</title>
+    <link rel="stylesheet" href="./style/common.css" />
+    <script type="module" src="./script/newgroupform.js" defer></script>
+  </head>
+  <body>
+    <a href="groups.html"><button class="backBtn">Back</button></a>
+    <header>
+      <img class="logo" src="./static/logo.jpg" alt="logo" />
+      <h2>Split Bill</h2>
+      <p>BEST IN MARKET</p>
+    </header>
+    <main>
+      <section class="form-container">
+        <h2>New group</h2>
+        <form id="dataform">
+          <label for="groupname">Group name</label>
+          <span class="error"></span>
+          <input id="groupname" type="text" />
+        </form>
+        <button type="submit" form="dataform">Add group</button>
+      </section>
+    </main>
+    <script>
+      document.body.style.display = 'none';
+    </script>
+  </body>
+</html>

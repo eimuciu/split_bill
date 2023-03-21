@@ -1,0 +1,43 @@
+:root {
+  --smaller-size: 16px;
+}
+
+header {
+  min-height: 20vh;
+  padding-bottom: 50px;
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+header h2 {
+  font-size: var(--smaller-size);
+}
+
+.form-container {
+  width: 25%;
+}
+
+.form-container h2 {
+  font-size: var(--smaller-size);
+}
+
+label {
+  font-size: 12px;
+}
+
+.data-container {
+  padding: 50px 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .data-container {
+    padding: 50px 50px;
+  }
+  .form-container {
+    width: 50%;
+  }
+}

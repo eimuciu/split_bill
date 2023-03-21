@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 20px 0px;
+}
+
+.logoutBtn {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+.backBtn {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  color: rgb(66, 65, 65);
+}
+
+header .logo {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 25px;
+}
+
+header h2 {
+  margin-bottom: 10px;
+}
+
+header p {
+  letter-spacing: 2px;
+}
+
+main h3 {
+  font-weight: 500;
+  text-align: center;
+}
+
+.form-container {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  padding: 7px 20px;
+  border: 1px solid black;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.error {
+  color: red;
+}
+
+.errorMark {
+  border: 1px solid red;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-container {
+    width: 60%;
+  }
+}

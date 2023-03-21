@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Bill</title>
+    <link rel="stylesheet" href="./style/common.css" />
+    <script type="module" src="./script/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./static/logo.jpg" alt="logo" />
+      <h2>Split Bill</h2>
+      <p>BEST IN MARKET</p>
+    </header>
+    <main>
+      <section class="form-container">
+        <h2>Login</h2>
+        <form id="dataform">
+          <label for="email">Email</label>
+          <span class="error"></span>
+          <input id="email" type="text" />
+          <label for="password">Password</label>
+          <span class="error"></span>
+          <input id="password" type="password" />
+        </form>
+        <button type="submit" form="dataform">Login</button>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+      </section>
+    </main>
+  </body>
+</html>
